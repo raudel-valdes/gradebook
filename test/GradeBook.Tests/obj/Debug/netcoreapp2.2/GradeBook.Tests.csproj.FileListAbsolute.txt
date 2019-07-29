@@ -12,3 +12,6 @@ C:\Users\qww9mht\Documents\Development\gradebook\test\GradeBook.Tests\obj\Debug\
 C:\Users\qww9mht\Documents\Development\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.AssemblyInfo.cs
 C:\Users\qww9mht\Documents\Development\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.dll
 C:\Users\qww9mht\Documents\Development\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.pdb
+C:\Users\qww9mht\Documents\Development\gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.2\GradeBook.dll
+C:\Users\qww9mht\Documents\Development\gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.2\GradeBook.pdb
+C:\Users\qww9mht\Documents\Development\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.2\GradeBook.Tests.csproj.CopyComplete

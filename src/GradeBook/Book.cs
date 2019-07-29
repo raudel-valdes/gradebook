@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
-    class Book
+    public class Book
     {
         //This is a constructor and it needs to have the same
         //name as your class and it cannot have a return type.
@@ -32,25 +32,27 @@ namespace GradeBook
             grades.Add(grade);
         }
         
-        public void showStatistics() 
+        public Statistics GetStatistics() 
         {
-            var result = 0.0;
-            var highGrade = double.MinValue;
-            var lowGrade = double.MaxValue;
-            foreach(double number in grades) {
+            var result = new Statistics();
+            result.Average = 0.0;
 
-                lowGrade = Math.Min(number, lowGrade);
-                highGrade = Math.Max(number, highGrade);
-                result += number;
+            //Here we make the high have the lowest double value
+            //and the LOW have the highest double value for when
+            //when we go compare we can get the values that we 
+            //really are looking for.
+            result.High = double.MinValue;
+            result.Low = double.MaxValue;
+
+            foreach(double grade in grades) {
+
+                result.Low = Math.Min(grade, result.Low);
+                result.High = Math.Max(grade, result.High);
+                result.Average += grade;
             }
+            result.Average /= grades.Count;
 
-            result /= grades.Count;
-
-
-            //N1 formats the decimal place to one digit
-            Console.WriteLine($"the lowest grade is {lowGrade:N1}");
-            Console.WriteLine($"the highest grade is {highGrade:N1}");
-            Console.WriteLine($"The average grade is {result:N1}");
+            return result;
         }
 
         //These are instance field and implicit typing can't be used
