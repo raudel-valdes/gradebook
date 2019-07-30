@@ -24,7 +24,7 @@ namespace GradeBook
             //this and this is one of those cases. In order to differentiate 
             //the name stored in the class from the name being sent  must 
             //use the THIS. to point to the class value.
-            this.name = name;
+            this.Name = name;
         }
 
         public void AddGrade(double grade)
@@ -57,6 +57,8 @@ namespace GradeBook
 
         //These are instance field and implicit typing can't be used
         private List<double> grades;
-        private string name;
+        
+        //Public members are always uppercase
+        public string Name;
     }
 }
